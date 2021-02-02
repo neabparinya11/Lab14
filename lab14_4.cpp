@@ -17,3 +17,19 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int &a,int &b,int &c,int &d){
+	int x=0;
+	x=((rand()%4)+1);
+	switch(x){
+		case 1: swap(a,b);
+		        swap(c,d);
+				break;
+		case 2: swap(a,c);
+		        swap(b,d);
+		        break;
+		case 3: swap(a,d);
+				swap(b,c);
+				break;
+		default: break;
+	}
+}
